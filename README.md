@@ -1,8 +1,7 @@
-ofo共享单车地图爬虫
+ofo共享单车地图爬虫lite版本
 ====================
 
 ```
-
 感谢您的支持
 朋友要做城市数据的一些研究，拜托我写ofo地图的小爬虫
 最初的看到了derekhe大神写的单车地图，觉得非常的优秀。
@@ -11,7 +10,9 @@ derekhe写的爬虫也没办法使用了，于是参考了derekhe的代码。
 对现在ofo的api进行了分析，实现了对ofo附近单车位置的爬取。
 ```
 
-该爬虫为ofo附近单车爬虫
+该爬虫为ofo附近单车爬虫lite版本
+* 相比master分支阉割掉了代理，和token的切换，保留了token注册机
+* 适用于小区域ofo位置的爬取
 * 新增ofo注册机
 * 目前只支持ofo
 * 多线程爬取
@@ -26,7 +27,7 @@ derekhe写的爬虫也没办法使用了，于是参考了derekhe的代码。
 请根据你的需要修改配置文件config.ini，请查看内置说明。
 
 ## Linux/Mac
-* 下载[最新代码](https://github.com/SilverBooker/ofoSpider/archive/master.zip)并解压
+* 下载[最新代码](https://github.com/SilverBooker/ofoSpider/archive/lite.zip)并解压
 * 修改config.ini确保坐标和区域等参数正确
 * 运行：
 ```
@@ -35,7 +36,7 @@ python3 run.py
 ```
 
 ## Windows
-* 下载[最新代码](https://github.com/SilverBooker/ofoSpider/archive/master.zip)并解压
+* 下载[最新代码](https://github.com/SilverBooker/ofoSpider/archive/lite.zip)并解压
 * 安装好python3.5.3
 * 在cmd中执行pip install -r requirements.txt
 * 修改config.ini确保坐标和区域等参数正确
